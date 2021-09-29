@@ -5,6 +5,7 @@ var inputValue = document.getElementById("search-box");
 var textCreds = document.getElementById('creds'); // Nodo tbody que tiene el id="button-filterByName"
 var table = document.getElementById('tableInfo'); // Nodo tbody que tiene el id="button-filterByName"
 renderCoursesInTable(dataCourses);
+textCreds.innerHTML = String(getTotalCredits(dataCourses));
 function renderCoursesInTable(courses) {
     courses.forEach(function (c) {
         var trElement = document.createElement("tr");
