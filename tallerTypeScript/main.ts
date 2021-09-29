@@ -7,7 +7,7 @@ const btnfilterByName: HTMLElement = document.getElementById('button-filterByNam
 const inputValue: HTMLInputElement = (document.getElementById("search-box") as HTMLInputElement);
 const textCreds: HTMLElement = document.getElementById('creds')!; // Nodo tbody que tiene el id="button-filterByName"
 const table: HTMLElement = document.getElementById('tableInfo')!; // Nodo tbody que tiene el id="button-filterByName"
-
+renderCoursesInTable(dataCourses);
 function renderCoursesInTable(courses: Course[]): void {
   courses.forEach(c => {
     let trElement = document.createElement("tr");
